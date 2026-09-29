@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Ruff
+        run: ruff check src tests
+
+      - name: Mypy
+        run: mypy src
+
+      - name: Pyright
+        run: pyright
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+          pip install build
+
+      - name: Pytest with coverage
+        run: pytest
+
+      - name: Node scorer truth-table tests
+        run: node --test tests/js/scorer.test.js
+
+      - name: Build wheel
+        run: python -m build
+
+      - name: Install wheel in fresh venv and smoke test
+        run: |
+          python -m venv /tmp/fresh-venv
+          /tmp/fresh-venv/bin/pip install dist/humanitarian_ai_risk_screen-0.2.0-py3-none-any.whl
+          /tmp/fresh-venv/bin/ai-risk-screen --version
+          /tmp/fresh-venv/bin/ai-risk-screen validate tests/fixtures/green_screen.yaml
+          /tmp/fresh-venv/bin/ai-risk-screen evaluate tests/fixtures/green_screen.yaml
+          /tmp/fresh-venv/bin/ai-risk-screen report tests/fixtures/green_screen.yaml -o /tmp/report.html
+          /tmp/fresh-venv/bin/ai-risk-screen export-templates /tmp/templates

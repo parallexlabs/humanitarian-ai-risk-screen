@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case cards — Humanitarian AI Risk Screen</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header role="banner">
+    <h1>Training case cards</h1>
+    <p class="tagline">All scenarios are synthetic — invented for training only.</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="screen.html">Risk screen</a></li>
+        <li><a href="scorer.html">Screen scorer</a></li>
+        <li><a href="cases.html" aria-current="page">Case cards</a></li>
+        <li><a href="sources.html">Source matrix</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <section aria-labelledby="case1">
+      <h2 id="case1">Case 1 — Wildfire evacuation SMS draft</h2>
+      <p>A communications officer wants to paste beneficiary phone numbers into a public AI chatbot to personalise evacuation SMS messages.</p>
+      <p><strong>Answer:</strong> <span class="outcome-badge outcome-red">Red</span> — prohibited input (R1). Use an approved SMS platform; no PII in AI prompts.</p>
+    </section>
+
+    <section aria-labelledby="case2">
+      <h2 id="case2">Case 2 — Translation with harmful omission</h2>
+      <p>AI translation from Dari to English omits a sentence about threats from an armed group. The officer submits without re-reading the original.</p>
+      <p><strong>Answer:</strong> <span class="outcome-badge outcome-amber">Amber</span> — protection review (A2); bilingual human review required.</p>
+    </section>
+
+    <section aria-labelledby="case3">
+      <h2 id="case3">Case 3 — Donor update with invented statistics</h2>
+      <p>AI drafts a donor report with "14,200 households" and "37% reduction" — numbers not verified against MEAL data.</p>
+      <p><strong>Answer:</strong> <span class="outcome-badge outcome-amber">Amber</span> before send; <span class="outcome-badge outcome-red">Red</span> if published with fabricated statistics. Use the source-check ledger.</p>
+    </section>
+
+    <section aria-labelledby="case4">
+      <h2 id="case4">Case 4 — Do not use AI</h2>
+      <p>A caseworker wants AI to decide cash-assistance eligibility from case notes.</p>
+      <p><strong>Answer:</strong> <span class="outcome-badge outcome-red">Red</span> — high-stakes eligibility decision (R3). Use structured human assessment with appeal rights.</p>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <p>Copyright ParalleX Labs Inc. Facilitator notes: <code>content/en/case-cards.md</code></p>
+  </footer>
+</body>
+</html>

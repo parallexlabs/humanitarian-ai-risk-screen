@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Humanitarian AI Risk Screen</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header role="banner">
+    <h1>Humanitarian AI Risk Screen</h1>
+    <p class="tagline">An open toolkit by ParalleX Labs Inc. for humanitarian and NGO staff</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="screen.html">Risk screen</a></li>
+        <li><a href="scorer.html">Screen scorer</a></li>
+        <li><a href="cases.html">Case cards</a></li>
+        <li><a href="sources.html">Source matrix</a></li>
+        <li><a href="fr/index.html" hreflang="fr">Français</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">About this toolkit</h2>
+      <p>This resource helps you decide <strong>whether and how</strong> to use an AI tool for a humanitarian task. It includes:</p>
+      <ul>
+        <li>A seven-step risk screen with accountable reviewers</li>
+        <li>A pilot charter template for amber outcomes</li>
+        <li>Synthetic training case cards</li>
+        <li>A source-check ledger and curriculum source matrix</li>
+        <li>A command-line tool (<code>ai-risk-screen</code>) for validation and reporting</li>
+      </ul>
+      <p><strong>Disclaimer:</strong> This is an open educational resource informed by cited humanitarian and privacy instruments. It is not an official standard, legal advice, or your organisation's policy. All case scenarios are synthetic.</p>
+    </section>
+    <section aria-labelledby="outcomes-heading">
+      <h2 id="outcomes-heading">Outcomes</h2>
+      <dl class="outcome-list">
+        <dt><span class="outcome-badge outcome-green">Green</span></dt>
+        <dd>Approved low-risk assistance with mandatory source checking</dd>
+        <dt><span class="outcome-badge outcome-amber">Amber</span></dt>
+        <dd>Pause for privacy, protection, or partner review; proceed via controlled pilot only</dd>
+        <dt><span class="outcome-badge outcome-red">Red</span></dt>
+        <dd>Do not use — prohibited input, unapproved tool, unreviewable high-stakes decision, or no safe remedy</dd>
+      </dl>
+    </section>
+    <section aria-labelledby="start-heading">
+      <h2 id="start-heading">Quick start</h2>
+      <ol>
+        <li>Read the <a href="screen.html">seven-step risk screen</a></li>
+        <li>Complete the <a href="scorer.html">browser scorer</a> (no data leaves your device)</li>
+        <li>Or install the CLI: <code>pip install humanitarian-ai-risk-screen</code></li>
+      </ol>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <p>Copyright ParalleX Labs Inc. Code: Apache-2.0. Content: CC BY 4.0.</p>
+  </footer>
+</body>
+</html>

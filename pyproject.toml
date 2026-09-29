@@ -1,0 +1,88 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "humanitarian-ai-risk-screen"
+version = "0.2.0"
+description = "Open toolkit to decide whether and how to use AI in humanitarian work"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+authors = [{ name = "ParalleX Labs Inc." }]
+keywords = ["humanitarian", "ai", "risk", "responsible-ai", "ngo"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed",
+]
+dependencies = [
+    "jsonschema>=4.23.0",
+    "pyyaml>=6.0.2",
+    "click>=8.1.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.8.0",
+    "mypy>=1.13.0",
+    "pyright>=1.1.390",
+    "types-PyYAML>=6.0.12.20240917",
+    "types-jsonschema>=4.23.0.20240813",
+]
+
+[project.scripts]
+ai-risk-screen = "ai_risk_screen.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ai_risk_screen"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src/ai_risk_screen" = "ai_risk_screen"
+
+[tool.hatch.build.targets.sdist]
+only-include = ["src", "schemas", "content", "README.md", "LICENSE", "LICENSE-CONTENT", "CITATION.cff"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=ai_risk_screen --cov-report=term-missing --cov-fail-under=90"
+
+[tool.coverage.run]
+source = ["ai_risk_screen"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+packages = ["ai_risk_screen"]
+mypy_path = "src"
+
+[tool.pyright]
+include = ["src"]
+pythonVersion = "3.12"
+typeCheckingMode = "standard"
+reportMissingTypeStubs = false
+reportUnknownVariableType = false
+reportUnknownMemberType = false
+reportUnknownArgumentType = false

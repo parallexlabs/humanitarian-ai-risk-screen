@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Risk screen — Humanitarian AI Risk Screen</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header role="banner">
+    <h1>Seven-step risk screen</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="screen.html" aria-current="page">Risk screen</a></li>
+        <li><a href="scorer.html">Screen scorer</a></li>
+        <li><a href="cases.html">Case cards</a></li>
+        <li><a href="sources.html">Source matrix</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <p>Each step has an <strong>accountable reviewer</strong> who signs off before you proceed.</p>
+
+    <section aria-labelledby="s1">
+      <h2 id="s1">1. Purpose and non-AI alternative</h2>
+      <p><strong>Reviewer:</strong> Programme or operations lead</p>
+      <p>Define the task, the non-AI alternative, and what AI adds. If the non-AI path is viable and sufficient, stop here.</p>
+    </section>
+
+    <section aria-labelledby="s2">
+      <h2 id="s2">2. People and partners</h2>
+      <p><strong>Reviewer:</strong> Protection or community-engagement focal point</p>
+      <p>Identify affected interests, safety risks, languages, local context, and partners who must be consulted.</p>
+    </section>
+
+    <section aria-labelledby="s3">
+      <h2 id="s3">3. Data</h2>
+      <p><strong>Reviewer:</strong> Data protection or IM focal point</p>
+      <p>Record data types, authority, minimization, and retention. Prohibited input triggers a <span class="outcome-badge outcome-red">Red</span> outcome.</p>
+    </section>
+
+    <section aria-labelledby="s4">
+      <h2 id="s4">4. Tool and vendor</h2>
+      <p><strong>Reviewer:</strong> IT or procurement</p>
+      <p>Document tool, vendor, processing location, access, onward use, and fallback. Unapproved tools trigger <span class="outcome-badge outcome-red">Red</span>.</p>
+    </section>
+
+    <section aria-labelledby="s5">
+      <h2 id="s5">5. Output verification</h2>
+      <p><strong>Reviewer:</strong> Subject-matter or MEAL focal point</p>
+      <p>Plan verification against trusted sources; test bias and exclusion with a human sample.</p>
+    </section>
+
+    <section aria-labelledby="s6">
+      <h2 id="s6">6. Human control</h2>
+      <p><strong>Reviewer:</strong> Line manager</p>
+      <p>Name who decides, records reasons, can override, and offers a remedy.</p>
+    </section>
+
+    <section aria-labelledby="s7">
+      <h2 id="s7">7. Monitoring and stop</h2>
+      <p><strong>Reviewer:</strong> Pilot or risk owner</p>
+      <p>Define pilot scope, failure threshold, incident route, review date, and withdrawal rule.</p>
+    </section>
+
+    <p><a href="scorer.html">Use the browser scorer</a> or export templates via <code>ai-risk-screen export-templates</code>.</p>
+  </main>
+  <footer role="contentinfo">
+    <p>Copyright ParalleX Labs Inc. Full text: <code>content/en/risk-screen.md</code></p>
+  </footer>
+</body>
+</html>

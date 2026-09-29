@@ -1,0 +1,73 @@
+meta:
+  task_name: "Translate community feedback"
+  organization: "Synthetic Aid Org"
+  screen_date: "2026-09-28"
+  screen_owner: "Field Officer"
+
+steps:
+  purpose:
+    reviewer: { name: "Lead", role: "Programme" }
+    task_description: "Translate feedback forms"
+    non_ai_alternative: "Human translator"
+    ai_value_proposition: "Speed for first draft"
+    complete: true
+
+  people:
+    reviewer: { name: "Protection", role: "Focal point" }
+    affected_groups: "Community members"
+    partners_to_consult: "Community leaders"
+    safety_language_context: "Dari to English"
+    partner_review_needed: true
+    protection_review_needed: false
+    complete: true
+
+  data:
+    reviewer: { name: "DPO", role: "Data" }
+    data_types: "Qualitative feedback; no direct identifiers"
+    authority_basis: "Participation consent"
+    minimization_plan: "Remove names before upload"
+    retention_plan: "90 days"
+    includes_personal_data: false
+    includes_prohibited_input: false
+    includes_sensitive_non_personal: true
+    privacy_review_needed: false
+    complete: true
+
+  tool:
+    reviewer: { name: "IT", role: "Tech" }
+    tool_name: "Approved translator"
+    vendor_name: "Vendor"
+    processing_location: "EU"
+    access_controls: "Enterprise SSO"
+    onward_use_policy: "No training"
+    fallback_plan: "Human translator"
+    tool_approved: true
+    complete: true
+
+  output:
+    reviewer: { name: "MEAL", role: "Quality" }
+    verification_plan: "Bilingual back-translation"
+    trusted_sources: "Original forms"
+    bias_exclusion_test: "Sample includes women and elderly"
+    high_stakes_decision: false
+    output_reviewable: true
+    complete: true
+
+  human_control:
+    reviewer: { name: "Manager", role: "Lead" }
+    decision_maker: "Programme manager"
+    record_keeper: "Field officer"
+    override_process: "Manager can reject"
+    remedy_process: "Re-translate and apologise"
+    safe_remedy_available: true
+    complete: true
+
+  monitoring:
+    reviewer: { name: "Owner", role: "Pilot" }
+    pilot_scope: "50 forms"
+    failure_threshold: "Any omission of safety content"
+    incident_route: "Protection within 12h"
+    review_date: "2026-10-10"
+    withdrawal_rule: "Stop on omission"
+    controlled_pilot_required: false
+    complete: true

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this resource, please cite it as below."
+title: "Humanitarian AI Risk Screen"
+version: 0.2.0
+date-released: 2026-09-28
+authors:
+  - name: ParalleX Labs Inc.
+    affiliation: ParalleX Labs Inc.
+repository-code: https://github.com/parallelxlabs/humanitarian-ai-risk-screen
+license: Apache-2.0
+keywords:
+  - humanitarian
+  - artificial-intelligence
+  - risk-assessment
+  - responsible-ai
+  - ngo

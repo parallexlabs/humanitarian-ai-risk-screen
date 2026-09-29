@@ -1,0 +1,74 @@
+meta:
+  task_name: "Draft internal meeting notes"
+  organization: "Synthetic Aid Org"
+  screen_date: "2026-09-28"
+  screen_owner: "Jane Doe"
+
+steps:
+  purpose:
+    reviewer: { name: "Program Lead", role: "Operations" }
+    task_description: "Summarise internal meeting notes for staff circulation"
+    non_ai_alternative: "Manual summary by note-taker"
+    ai_value_proposition: "Faster first draft; human edits required"
+    non_ai_viable: true
+    complete: true
+
+  people:
+    reviewer: { name: "HR Lead", role: "Staff welfare" }
+    affected_groups: "Staff only; no affected populations"
+    partners_to_consult: "None"
+    safety_language_context: "English internal audience"
+    partner_review_needed: false
+    protection_review_needed: false
+    complete: true
+
+  data:
+    reviewer: { name: "IM Officer", role: "Information management" }
+    data_types: "Non-personal meeting notes"
+    authority_basis: "Internal operations policy"
+    minimization_plan: "No beneficiary data included"
+    retention_plan: "Delete drafts after 30 days"
+    includes_personal_data: false
+    includes_prohibited_input: false
+    includes_sensitive_non_personal: false
+    privacy_review_needed: false
+    complete: true
+
+  tool:
+    reviewer: { name: "IT Lead", role: "Technology" }
+    tool_name: "Approved Enterprise Assistant"
+    vendor_name: "Example Vendor Inc."
+    processing_location: "Canada"
+    access_controls: "SSO; org tenant only"
+    onward_use_policy: "No training on org data per contract"
+    fallback_plan: "Manual summary"
+    tool_approved: true
+    complete: true
+
+  output:
+    reviewer: { name: "MEAL Officer", role: "Quality" }
+    verification_plan: "Staff reviewer checks facts against minutes"
+    trusted_sources: "Original meeting minutes"
+    bias_exclusion_test: "Not applicable; internal staff audience"
+    high_stakes_decision: false
+    output_reviewable: true
+    complete: true
+
+  human_control:
+    reviewer: { name: "Line Manager", role: "Supervisor" }
+    decision_maker: "Communications lead"
+    record_keeper: "Communications lead"
+    override_process: "Manager can reject draft"
+    remedy_process: "Correct and reissue internal note"
+    safe_remedy_available: true
+    complete: true
+
+  monitoring:
+    reviewer: { name: "Pilot Owner", role: "Communications" }
+    pilot_scope: "Two meetings over two weeks"
+    failure_threshold: "Any factual error in circulated note"
+    incident_route: "Notify IT and programme lead within 24h"
+    review_date: "2026-10-15"
+    withdrawal_rule: "Stop if any factual error reaches staff"
+    controlled_pilot_required: false
+    complete: true

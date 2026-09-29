@@ -1,0 +1,73 @@
+meta:
+  task_name: "Personalised SMS"
+  organization: "Synthetic Aid Org"
+  screen_date: "2026-09-28"
+  screen_owner: "Comms Officer"
+
+steps:
+  purpose:
+    reviewer: { name: "Lead", role: "Ops" }
+    task_description: "Draft evacuation SMS"
+    non_ai_alternative: "Template SMS"
+    ai_value_proposition: "Speed"
+    complete: true
+
+  people:
+    reviewer: { name: "Protection", role: "Focal point" }
+    affected_groups: "Evacuees"
+    partners_to_consult: "Local authorities"
+    safety_language_context: "Local language"
+    partner_review_needed: true
+    protection_review_needed: true
+    complete: true
+
+  data:
+    reviewer: { name: "DPO", role: "Data" }
+    data_types: "Beneficiary names and phone numbers"
+    authority_basis: "Programme consent"
+    minimization_plan: "None stated"
+    retention_plan: "Unknown"
+    includes_personal_data: true
+    includes_prohibited_input: true
+    includes_sensitive_non_personal: false
+    privacy_review_needed: true
+    complete: true
+
+  tool:
+    reviewer: { name: "IT", role: "Tech" }
+    tool_name: "Public chatbot"
+    vendor_name: "Vendor"
+    processing_location: "US"
+    access_controls: "Public"
+    onward_use_policy: "May train on inputs"
+    fallback_plan: "Manual"
+    tool_approved: false
+    complete: true
+
+  output:
+    reviewer: { name: "MEAL", role: "Quality" }
+    verification_plan: "Check against template"
+    trusted_sources: "Official alert template"
+    bias_exclusion_test: "Community reviewer"
+    high_stakes_decision: true
+    output_reviewable: true
+    complete: true
+
+  human_control:
+    reviewer: { name: "Manager", role: "Lead" }
+    decision_maker: "Comms lead"
+    record_keeper: "Comms lead"
+    override_process: "Manager approval"
+    remedy_process: "Resend corrected SMS"
+    safe_remedy_available: true
+    complete: true
+
+  monitoring:
+    reviewer: { name: "Owner", role: "Pilot" }
+    pilot_scope: "One zone"
+    failure_threshold: "Any wrong route"
+    incident_route: "Protection lead"
+    review_date: "2026-10-01"
+    withdrawal_rule: "Stop on error"
+    controlled_pilot_required: true
+    complete: true

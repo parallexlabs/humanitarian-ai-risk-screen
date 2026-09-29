@@ -1,0 +1,581 @@
+{
+  "description": "Shared outcome truth table for Python and JavaScript parity tests",
+  "cases": [
+    {
+      "id": "green_complete",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None needed",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "green",
+        "rule_ids": ["G1"]
+      }
+    },
+    {
+      "id": "red_r1_prohibited",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": true,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "red",
+        "rule_ids": ["R1"]
+      }
+    },
+    {
+      "id": "red_r2_unapproved_tool",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": false, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "red",
+        "rule_ids": ["R2"]
+      }
+    },
+    {
+      "id": "red_r3_high_stakes_unreviewable",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": true,
+            "output_reviewable": false,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "red",
+        "rule_ids": ["R3"]
+      }
+    },
+    {
+      "id": "red_r4_no_remedy",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": false, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "red",
+        "rule_ids": ["R4"]
+      }
+    },
+    {
+      "id": "amber_a0_incomplete",
+      "input": {
+        "steps": {
+          "purpose": { "complete": false },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A0"]
+      }
+    },
+    {
+      "id": "amber_a1_privacy_review",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": true,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A1"]
+      }
+    },
+    {
+      "id": "amber_a2_protection_review",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": true,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A2"]
+      }
+    },
+    {
+      "id": "amber_a3_partner_review",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": true,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A3"]
+      }
+    },
+    {
+      "id": "amber_a4_controlled_pilot",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": true, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A4"]
+      }
+    },
+    {
+      "id": "amber_a5_personal_data_no_authority",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": true,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A5"]
+      }
+    },
+    {
+      "id": "amber_a6_sensitive_no_minimization",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": true,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A6"]
+      }
+    },
+    {
+      "id": "amber_a7_high_stakes_review",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": true,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A7"]
+      }
+    },
+    {
+      "id": "amber_a8_output_not_reviewable",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": false,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A8"]
+      }
+    },
+    {
+      "id": "amber_a9_missing_tool_approved",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A9"]
+      }
+    },
+    {
+      "id": "amber_a9_missing_output_reviewable",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "high_stakes_decision": false,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A9"]
+      }
+    },
+    {
+      "id": "missing_high_stakes_never_green",
+      "input": {
+        "steps": {
+          "purpose": { "complete": true },
+          "people": {
+            "partner_review_needed": false,
+            "protection_review_needed": false,
+            "complete": true
+          },
+          "data": {
+            "includes_prohibited_input": false,
+            "includes_personal_data": false,
+            "includes_sensitive_non_personal": false,
+            "privacy_review_needed": false,
+            "authority_basis": "Policy",
+            "minimization_plan": "None",
+            "complete": true
+          },
+          "tool": { "tool_approved": true, "complete": true },
+          "output": {
+            "output_reviewable": true,
+            "complete": true
+          },
+          "human_control": { "safe_remedy_available": true, "complete": true },
+          "monitoring": { "controlled_pilot_required": false, "complete": true }
+        }
+      },
+      "expected": {
+        "level": "amber",
+        "rule_ids": ["A9"]
+      }
+    }
+  ]
+}

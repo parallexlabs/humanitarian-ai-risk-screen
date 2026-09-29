@@ -1,8 +1,14 @@
 # Humanitarian AI Risk Screen
 
-An open resource by **ParalleX Labs Inc.** — a British Columbia data and AI consultancy — to help humanitarian and NGO staff decide whether and how to use an AI tool for a task.
+An open resource by **ParalleX Labs Inc.**, a British Columbia data and AI consultancy, to help humanitarian and NGO staff decide whether and how to use an AI tool for a task.
 
 **This is not** an official standard, legal advice, or your organisation's policy. All training cases are **synthetic**. No clients or deployments are claimed.
+
+## Open by design
+
+**We build in the open.** ParalleX Labs Inc. publishes its tools, methods and learning materials under open licences, so public-interest teams can use them, check how they work and adapt them freely. Open work is easier to trust, because anyone can see exactly how a result is produced. Code is licensed under Apache-2.0 and content under CC BY 4.0.
+
+**Our own work, and only ours.** Everything in this repository was created by ParalleX Labs Inc. from public data and synthetic examples. It contains no client data, no client projects, and no one else's confidential information or intellectual property.
 
 ## What is included
 
@@ -48,7 +54,7 @@ Open `docs/index.html` in a browser for the toolkit site and scorer.
 
 Outcomes are computed **deterministically** from explicit flags in the screen file. Every rule uses strict boolean predicates (`value is True` or `value is False`); missing rule-driving fields trigger amber rule **A9** and never green. Run `ai-risk-screen rules` for machine-readable paths and predicates.
 
-### Red — Do not use
+### Red: do not use
 
 | Rule | Predicate |
 |------|-----------|
@@ -57,7 +63,7 @@ Outcomes are computed **deterministically** from explicit flags in the screen fi
 | R3 | `steps.output.high_stakes_decision` **is True** AND `steps.output.output_reviewable` **is False** |
 | R4 | `steps.human_control.safe_remedy_available` **is False** |
 
-### Amber — Pause for review and controlled pilot
+### Amber: pause for review and a controlled pilot
 
 | Rule | Predicate |
 |------|-----------|
@@ -72,7 +78,7 @@ Outcomes are computed **deterministically** from explicit flags in the screen fi
 | A8 | `steps.output.output_reviewable` **is False** |
 | A9 | Any rule-driving boolean is missing or not a boolean |
 
-### Green — Approved low-risk assistance
+### Green: approved low-risk assistance
 
 | Rule | Predicate |
 |------|-----------|

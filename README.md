@@ -1,3 +1,10 @@
+<p align="center" class="brand-mark">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/brand/parallex-mark-dark.png">
+    <img src=".github/brand/parallex-mark.png" alt="ParalleX Labs" width="120">
+  </picture>
+</p>
+
 # Humanitarian AI Risk Screen
 
 An open resource by **ParalleX Labs Inc.**, a British Columbia data and AI consultancy, to help humanitarian and NGO staff decide whether and how to use an AI tool for a task.

@@ -9,6 +9,13 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 SOURCES_MD = REPO_ROOT / "SOURCES.md"
 OUTPUT_HTML = REPO_ROOT / "docs" / "sources.html"
 
+BRAND_MARK = (
+    '<picture class="brand-mark">'
+    '<source media="(prefers-color-scheme: dark)" srcset="assets/brand/parallex-mark-dark.png">'
+    '<img src="assets/brand/parallex-mark.png" alt="ParalleX Labs" width="36" height="36">'
+    "</picture>"
+)
+
 TABLE_HEADER = (
     "| Instrument | Exact title | Issuer | Year | Version | URL | "
     "Use in toolkit | Limits | Verification |"
@@ -80,10 +87,12 @@ def render_sources_html(rows: list[dict[str, str]]) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Source matrix — Humanitarian AI Risk Screen</title>
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/parallex-favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/brand/parallex-apple-touch-180.png">
 </head>
 <body>
   <header role="banner">
-    <h1>Curriculum source matrix</h1>
+    <div class="brand-lockup">{BRAND_MARK}<h1>Curriculum source matrix</h1></div>
     <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>

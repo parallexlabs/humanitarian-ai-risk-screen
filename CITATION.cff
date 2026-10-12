@@ -6,7 +6,7 @@ date-released: 2026-09-28
 authors:
   - name: ParalleX Labs Inc.
     affiliation: ParalleX Labs Inc.
-repository-code: https://github.com/parallelxlabs/humanitarian-ai-risk-screen
+repository-code: https://github.com/parallexlabs/humanitarian-ai-risk-screen
 license: Apache-2.0
 keywords:
   - humanitarian

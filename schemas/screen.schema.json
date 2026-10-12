@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://parallelxlabs.ca/schemas/humanitarian-ai-risk-screen/screen.schema.json",
+  "$id": "https://parallexlabs.github.io/humanitarian-ai-risk-screen/schemas/screen.schema.json",
   "title": "Humanitarian AI Risk Screen",
   "description": "Completed seven-step AI-use risk screen for humanitarian and NGO staff.",
   "type": "object",

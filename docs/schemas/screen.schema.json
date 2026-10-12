@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://parallexlabs.github.io/humanitarian-ai-risk-screen/schemas/screen.schema.json",
+  "title": "Humanitarian AI Risk Screen",
+  "description": "Completed seven-step AI-use risk screen for humanitarian and NGO staff.",
+  "type": "object",
+  "required": ["meta", "steps"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["task_name", "organization", "screen_date", "screen_owner"],
+      "additionalProperties": false,
+      "properties": {
+        "task_name": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "organization": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "screen_date": { "type": "string", "format": "date" },
+        "screen_owner": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "reference_url": { "$ref": "#/$defs/https_url" }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "purpose",
+        "people",
+        "data",
+        "tool",
+        "output",
+        "human_control",
+        "monitoring"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "purpose": { "$ref": "#/$defs/step_purpose" },
+        "people": { "$ref": "#/$defs/step_people" },
+        "data": { "$ref": "#/$defs/step_data" },
+        "tool": { "$ref": "#/$defs/step_tool" },
+        "output": { "$ref": "#/$defs/step_output" },
+        "human_control": { "$ref": "#/$defs/step_human_control" },
+        "monitoring": { "$ref": "#/$defs/step_monitoring" }
+      }
+    }
+  },
+  "$defs": {
+    "https_url": {
+      "type": "string",
+      "pattern": "^https://[^\\s]+$"
+    },
+    "reviewer": {
+      "type": "object",
+      "required": ["name", "role"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "role": { "type": "string", "minLength": 1, "maxLength": 200 }
+      }
+    },
+    "step_purpose": {
+      "type": "object",
+      "required": [
+        "reviewer",
+        "task_description",
+        "non_ai_alternative",
+        "ai_value_proposition",
+        "complete"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "reviewer": { "$ref": "#/$defs/reviewer" },
+        "task_description": { "type": "string", "minLength": 1 },
+        "non_ai_alternative": { "type": "string", "minLength": 1 },
+        "ai_value_proposition": { "type": "string", "minLength": 1 },
+        "non_ai_viable": { "type": "boolean" },
+        "complete": { "type": "boolean" }
+      }
+    },
+    "step_people": {
+      "type": "object",
+      "required": [
+        "reviewer",
+        "affected_groups",
+        "partners_to_consult",
+        "safety_language_context",
+        "partner_review_needed",
+        "protection_review_needed",
+        "complete"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "reviewer": { "$ref": "#/$defs/reviewer" },
+        "affected_groups": { "type": "string", "minLength": 1 },
+        "partners_to_consult": { "type": "string", "minLength": 1 },
+        "safety_language_context": { "type": "string", "minLength": 1 },
+        "partner_review_needed": { "type": "boolean" },
+        "protection_review_needed": { "type": "boolean" },
+        "complete": { "type": "boolean" }
+      }
+    },
+    "step_data": {
+      "type": "object",
+      "required": [
+        "reviewer",
+        "data_types",
+        "authority_basis",
+        "minimization_plan",
+        "retention_plan",
+        "includes_personal_data",
+        "includes_prohibited_input",
+        "includes_sensitive_non_personal",
+        "privacy_review_needed",
+        "complete"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "reviewer": { "$ref": "#/$defs/reviewer" },
+        "data_types": { "type": "string", "minLength": 1 },
+        "authority_basis": { "type": "string", "minLength": 1 },
+        "minimization_plan": { "type": "string", "minLength": 1 },
+        "retention_plan": { "type": "string", "minLength": 1 },
+        "includes_personal_data": { "type": "boolean" },
+        "includes_prohibited_input": { "type": "boolean" },
+        "includes_sensitive_non_personal": { "type": "boolean" },
+        "privacy_review_needed": { "type": "boolean" },
+        "complete": { "type": "boolean" }
+      }
+    },
+    "step_tool": {
+      "type": "object",
+      "required": [
+        "reviewer",
+        "tool_name",
+        "vendor_name",
+        "processing_location",
+        "access_controls",
+        "onward_use_policy",
+        "fallback_plan",
+        "tool_approved",
+        "complete"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "reviewer": { "$ref": "#/$defs/reviewer" },
+        "tool_name": { "type": "string", "minLength": 1 },
+        "vendor_name": { "type": "string", "minLength": 1 },
+        "processing_location": { "type": "string", "minLength": 1 },
+        "access_controls": { "type": "string", "minLength": 1 },
+        "onward_use_policy": { "type": "string", "minLength": 1 },
+        "fallback_plan": { "type": "string", "minLength": 1 },
+        "tool_approved": { "type": "boolean" },
+        "vendor_url": { "$ref": "#/$defs/https_url" },
+        "complete": { "type": "boolean" }
+      }
+    },
+    "step_output": {
+      "type": "object",
+      "required": [
+        "reviewer",
+        "verification_plan",
+        "trusted_sources",
+        "bias_exclusion_test",
+        "high_stakes_decision",
+        "output_reviewable",
+        "complete"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "reviewer": { "$ref": "#/$defs/reviewer" },
+        "verification_plan": { "type": "string", "minLength": 1 },
+        "trusted_sources": { "type": "string", "minLength": 1 },
+        "bias_exclusion_test": { "type": "string", "minLength": 1 },
+        "high_stakes_decision": { "type": "boolean" },
+        "output_reviewable": { "type": "boolean" },
+        "complete": { "type": "boolean" }
+      }
+    },
+    "step_human_control": {
+      "type": "object",
+      "required": [
+        "reviewer",
+        "decision_maker",
+        "record_keeper",
+        "override_process",
+        "remedy_process",
+        "safe_remedy_available",
+        "complete"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "reviewer": { "$ref": "#/$defs/reviewer" },
+        "decision_maker": { "type": "string", "minLength": 1 },
+        "record_keeper": { "type": "string", "minLength": 1 },
+        "override_process": { "type": "string", "minLength": 1 },
+        "remedy_process": { "type": "string", "minLength": 1 },
+        "safe_remedy_available": { "type": "boolean" },
+        "complete": { "type": "boolean" }
+      }
+    },
+    "step_monitoring": {
+      "type": "object",
+      "required": [
+        "reviewer",
+        "pilot_scope",
+        "failure_threshold",
+        "incident_route",
+        "review_date",
+        "withdrawal_rule",
+        "controlled_pilot_required",
+        "complete"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "reviewer": { "$ref": "#/$defs/reviewer" },
+        "pilot_scope": { "type": "string", "minLength": 1 },
+        "failure_threshold": { "type": "string", "minLength": 1 },
+        "incident_route": { "type": "string", "minLength": 1 },
+        "review_date": { "type": "string", "format": "date" },
+        "withdrawal_rule": { "type": "string", "minLength": 1 },
+        "controlled_pilot_required": { "type": "boolean" },
+        "complete": { "type": "boolean" }
+      }
+    }
+  }
+}

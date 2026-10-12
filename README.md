@@ -7,9 +7,11 @@
 
 # Humanitarian AI Risk Screen
 
-An open resource by **ParalleX Labs Inc.**, a British Columbia data and AI consultancy, to help humanitarian and NGO staff decide whether and how to use an AI tool for a task.
+An open resource by **ParalleX Labs Inc.**, a small British Columbia company, to help humanitarian and NGO staff decide whether and how to use an AI tool for a task.
 
 **This is not** an official standard, legal advice, or your organisation's policy. All training cases are **synthetic**. No clients or deployments are claimed.
+
+**Status:** early release (0.2.0). The rules have not been tested with a humanitarian organization.
 
 ## Open by design
 
@@ -85,7 +87,7 @@ Outcomes are computed **deterministically** from explicit flags in the screen fi
 | A8 | `steps.output.output_reviewable` **is False** |
 | A9 | Any rule-driving boolean is missing or not a boolean |
 
-### Green: approved low-risk assistance
+### Green: low risk, proceed with checks
 
 | Rule | Predicate |
 |------|-----------|

@@ -42,9 +42,9 @@
   );
 
   var OUTCOME_LABELS = {
-    green: "Green — Approved low-risk assistance with source checking",
-    amber: "Amber — Pause for review and controlled pilot",
-    red: "Red — Do not use",
+    green: "Green: low risk, proceed with checks",
+    amber: "Amber: pause for review and controlled pilot",
+    red: "Red: do not use",
   };
 
   function getValue(data, path) {

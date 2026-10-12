@@ -14,7 +14,7 @@ A seven-step checklist to decide whether and how to use an AI tool for a humanit
 
 | Outcome | Meaning |
 |---------|---------|
-| **Green** | Approved low-risk assistance with mandatory source checking |
+| **Green** | Low risk. Proceed with source checks and a named owner's sign-off. |
 | **Amber** | Pause for privacy, protection, or partner review; proceed only via controlled pilot |
 | **Red** | Do not use — prohibited input, unapproved tool, unreviewable high-stakes decision, or no safe remedy |
 

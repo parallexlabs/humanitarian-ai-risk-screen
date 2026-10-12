@@ -54,9 +54,9 @@ RULE_DRIVING_BOOLEAN_PATHS: tuple[tuple[str, ...], ...] = (
 )
 
 OUTCOME_LABELS: dict[OutcomeLevel, str] = {
-    "green": "Green — Approved low-risk assistance with source checking",
-    "amber": "Amber — Pause for review and controlled pilot",
-    "red": "Red — Do not use",
+    "green": "Green: low risk, proceed with checks",
+    "amber": "Amber: pause for review and controlled pilot",
+    "red": "Red: do not use",
 }
 
 RED_RULES: tuple[RuleSpec, ...] = (

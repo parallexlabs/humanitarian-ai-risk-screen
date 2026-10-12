@@ -16,7 +16,7 @@ Une liste de contrôle en sept étapes pour décider si et comment utiliser un o
 
 | Résultat | Signification |
 |----------|---------------|
-| **Vert** | Aide à faible risque approuvée avec vérification obligatoire des sources |
+| **Vert** | Risque faible. Poursuivre avec la vérification des sources et l'approbation d'un responsable désigné. |
 | **Ambre** | Pause pour examen confidentialité, protection ou partenaires ; poursuivre seulement via pilote contrôlé |
 | **Rouge** | Ne pas utiliser — entrée prohibée, outil non approuvé, décision à enjeux élevés non vérifiable, ou aucun recours sûr |
 

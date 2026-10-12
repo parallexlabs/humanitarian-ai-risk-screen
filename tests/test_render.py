@@ -12,7 +12,7 @@ def test_markdown_contains_outcome_label(green_screen: dict[str, Any]) -> None:
     outcome = evaluate_outcome(green_screen)
     md = render_markdown(green_screen, outcome)
     assert "Green" in md
-    assert "Approved low" in md
+    assert "low risk, proceed with checks" in md
     assert "Humanitarian AI Risk Screen Report" in md
 
 

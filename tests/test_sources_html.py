@@ -17,9 +17,10 @@ def test_sources_html_matches_sources_md() -> None:
     assert actual == expected
 
 
-def test_sources_html_includes_ifrc_unverified_and_iasc_partial() -> None:
+def test_sources_html_drops_unverified_ifrc_row_and_keeps_iasc_partial() -> None:
     html = OUTPUT_HTML.read_text(encoding="utf-8")
-    assert "UNVERIFIED" in html
+    assert "IFRC" not in html
+    assert "UNVERIFIED" not in html
     assert "Partially verified" in html
     assert (
         "https://www.icrc.org/en/publication/"

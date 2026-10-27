@@ -1,6 +1,6 @@
 # Sources
 
-The instruments that informed this toolkit, with issuer, year, version, URL, where each is used, and its limits. Every URL was checked on the publisher's page; rows marked **UNVERIFIED** or **Partially verified** could not be fully confirmed. Check the publisher page before citing any of them.
+The instruments that informed this toolkit, with issuer, year, version, URL, where each is used, and its limits. Every URL was checked on the publisher's page; rows marked **Partially verified** could not be fully confirmed. Check the publisher page before citing any of them.
 
 ## Curriculum source matrix
 
@@ -13,7 +13,6 @@ The instruments that informed this toolkit, with issuer, year, version, URL, whe
 | Canadian generative AI principles | Principles for responsible, trustworthy and privacy-protective generative AI technologies | Federal, provincial and territorial privacy authorities in Canada (led by OPC) | 2023 | Published 7 December 2023 | https://www.priv.gc.ca/en/privacy-topics/technology/artificial-intelligence/gd_principles_ai | Step 3 data; step 5 output verification | Principles not law; interpret with applicable statutes | **Verified** (publisher page, 2026-09-28) |
 | HPN Network Paper 89 | Humanitarian AI revisited: Seizing the potential and sidestepping the pitfalls | Humanitarian Practice Network (HPN) / ODI; author Sarah W. Spencer | 2024 | Network Paper 89, May 2024 | https://odihpn.org/en/publication/humanitarian-ai-revisited-seizing-the-potential-and-sidestepping-the-pitfalls/ | Overall curriculum; procurement and governance | Focus on large agencies; synthetic cases are separate | **Verified** (publisher page, 2026-09-28) |
 | UNHCR AI approach | UNHCR AI Approach | UNHCR | 2025 | September 2025 (PDF filename) | https://www.unhcr.org/digitalstrategy/ai-approach/ | Step 4 tool; step 6 governance | Strategic framework; verify PDF title on download | **Verified** (publisher page + PDF host on unhcr.org, 2026-09-28) |
-| IFRC responsible AI | Guidelines for the responsible use of AI across the IFRC | IFRC (referenced in IFRC Annual Report 2024) | 2024 | **UNVERIFIED** — exact title/version not confirmed on ifrc.org primary page | **UNVERIFIED** — see IFRC Annual Report 2024 on ReliefWeb: https://reliefweb.int/report/world/ifrc-annual-report-2024 | Step 4 tool; network governance | Cited in annual report narrative; standalone publisher URL not verified | **UNVERIFIED** |
 
 ---
 

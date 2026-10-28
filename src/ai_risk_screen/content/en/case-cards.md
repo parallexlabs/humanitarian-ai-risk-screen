@@ -1,10 +1,10 @@
 # Training case cards (synthetic)
 
-All scenarios below are **synthetic** — invented for training. They do not describe real events, people, or organisations.
+All scenarios below are **synthetic**: invented for training. They do not describe real events, people, or organisations.
 
 ---
 
-## Case 1 — Wildfire evacuation SMS draft
+## Case 1: Wildfire evacuation SMS draft
 
 ### Scenario
 
@@ -20,13 +20,13 @@ A communications officer asks an AI chat tool to draft an SMS alerting 2,400 hou
 
 | Outcome | **Red** |
 |---------|---------|
-| Primary rule | R1 — Prohibited input (unredacted beneficiary names and phone numbers) |
-| Secondary flags | A4 — Controlled pilot would be needed even with a approved enterprise tool |
+| Primary rule | R1: Prohibited input (unredacted beneficiary names and phone numbers) |
+| Secondary flags | A4: Controlled pilot would be needed even with a approved enterprise tool |
 | Correct action | Use an approved mass-SMS platform with pre-approved templates; no PII in generative AI prompts; protection review for evacuation wording |
 
 ---
 
-## Case 2 — Translation ambiguity with harmful omission
+## Case 2: Translation ambiguity with harmful omission
 
 ### Scenario
 
@@ -42,12 +42,12 @@ A field officer uses AI to translate a community feedback form from Dari to Engl
 
 | Outcome | **Amber** (could become **Red** if published without fix) |
 |---------|-----------------------------------------------------------|
-| Primary rules | A2 — Protection review needed; A8 — Output not confirmed reviewable |
+| Primary rules | A2: Protection review needed; A8: Output not confirmed reviewable |
 | Correct action | Human bilingual review of full source; protection focal point sign-off; never publish translations without side-by-side check |
 
 ---
 
-## Case 3 — Donor update with invented statistics
+## Case 3: Donor update with invented statistics
 
 ### Scenario
 
@@ -63,12 +63,12 @@ A grants manager asks AI to draft a quarterly donor update. The draft states tha
 
 | Outcome | **Amber** if caught before send; **Red** if published with fabricated numbers |
 |---------|----------------------------------------------------------------------------------|
-| Primary rules | A7 — High-stakes (donor reporting); requires verification |
+| Primary rules | A7: High-stakes (donor reporting); requires verification |
 | Correct action | Every number traced to MEAL or official monitoring data in the source-check ledger; MEAL focal point signs off |
 
 ---
 
-## Case 4 — When the right answer is not to use AI
+## Case 4: When the right answer is not to use AI
 
 ### Scenario
 
@@ -84,5 +84,5 @@ A caseworker wants to use AI to decide whether a refugee family meets vulnerabil
 
 | Outcome | **Red** |
 |---------|---------|
-| Primary rules | R3 — High-stakes decision that must not be delegated to unreviewable AI output |
+| Primary rules | R3: High-stakes decision that must not be delegated to unreviewable AI output |
 | Correct action | Do not use AI for eligibility decisions; use structured human assessment with documented criteria, appeal route, and caseworker accountability |

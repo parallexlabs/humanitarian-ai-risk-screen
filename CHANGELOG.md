@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.0 — 2026-09-28
+## 0.2.0 (2026-09-28)
 
 ### Fixed
 
@@ -22,6 +22,6 @@
 - CI wheel smoke tests for `validate`, `evaluate`, `report`, and `export-templates`.
 - Markdown injection regression tests.
 
-## 0.1.0 — 2026-09-28
+## 0.1.0 (2026-09-28)
 
 Initial public toolkit release.

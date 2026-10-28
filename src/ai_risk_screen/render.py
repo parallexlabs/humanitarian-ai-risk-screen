@@ -122,7 +122,7 @@ def render_html(data: dict[str, Any], outcome: OutcomeResult) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Humanitarian AI Risk Screen — {task_name}</title>
+  <title>Humanitarian AI Risk Screen | {task_name}</title>
   <style>
     :root {{
       --text: #1a1a1a;

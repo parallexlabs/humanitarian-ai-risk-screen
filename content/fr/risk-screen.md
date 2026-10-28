@@ -1,6 +1,6 @@
 # Écran de risque IA humanitaire
 
-*Traduction de travail — révision bienvenue*
+*Traduction de travail : révision bienvenue*
 
 Une liste de contrôle en sept étapes pour décider si et comment utiliser un outil d'IA pour une tâche humanitaire ou d'ONG. Chaque étape désigne un **réviseur responsable** qui approuve avant de continuer.
 
@@ -18,11 +18,11 @@ Une liste de contrôle en sept étapes pour décider si et comment utiliser un o
 |----------|---------------|
 | **Vert** | Risque faible. Poursuivre avec la vérification des sources et l'approbation d'un responsable désigné. |
 | **Ambre** | Pause pour examen confidentialité, protection ou partenaires ; poursuivre seulement via pilote contrôlé |
-| **Rouge** | Ne pas utiliser — entrée prohibée, outil non approuvé, décision à enjeux élevés non vérifiable, ou aucun recours sûr |
+| **Rouge** | Ne pas utiliser : entrée prohibée, outil non approuvé, décision à enjeux élevés non vérifiable, ou aucun recours sûr |
 
 ---
 
-## Étape 1 — Objectif et alternative sans IA
+## Étape 1 : Objectif et alternative sans IA
 
 **Réviseur responsable :** Responsable de programme ou des opérations
 
@@ -30,14 +30,14 @@ Une liste de contrôle en sept étapes pour décider si et comment utiliser un o
 |----------|-------------------------|
 | Quelle tâche l'IA soutiendra-t-elle ? | Description claire du travail |
 | Que feriez-vous sans IA ? | L'alternative sans IA (brouillon manuel, modèle, examen d'expert, réunion communautaire) |
-| Qu'est-ce que l'IA ajoute ? | Temps gagné, couverture linguistique, échelle — énoncé honnêtement |
+| Qu'est-ce que l'IA ajoute ? | Temps gagné, couverture linguistique, échelle, énoncé honnêtement |
 | La voie sans IA est-elle viable ? | Oui/non ; si non, expliquer pourquoi l'IA est proportionnée |
 
 **Arrêt si :** La tâche est mieux servie par l'alternative sans IA et l'IA n'ajoute aucune valeur responsable.
 
 ---
 
-## Étape 2 — Personnes et partenaires
+## Étape 2 : Personnes et partenaires
 
 **Réviseur responsable :** Point focal protection ou engagement communautaire
 
@@ -52,7 +52,7 @@ Une liste de contrôle en sept étapes pour décider si et comment utiliser un o
 
 ---
 
-## Étape 3 — Données
+## Étape 3 : Données
 
 **Réviseur responsable :** Point focal protection des données ou gestion de l'information
 
@@ -69,7 +69,7 @@ Une liste de contrôle en sept étapes pour décider si et comment utiliser un o
 
 ---
 
-## Étape 4 — Outil et fournisseur
+## Étape 4 : Outil et fournisseur
 
 **Réviseur responsable :** TI, approvisionnement ou approbateur d'outils désigné
 
@@ -86,7 +86,7 @@ Une liste de contrôle en sept étapes pour décider si et comment utiliser un o
 
 ---
 
-## Étape 5 — Vérification des sorties
+## Étape 5 : Vérification des sorties
 
 **Réviseur responsable :** Point focal matière ou MEAL
 
@@ -101,7 +101,7 @@ Une liste de contrôle en sept étapes pour décider si et comment utiliser un o
 
 ---
 
-## Étape 6 — Contrôle humain
+## Étape 6 : Contrôle humain
 
 **Réviseur responsable :** Supérieur hiérarchique ou autorité déléguée
 
@@ -116,7 +116,7 @@ Une liste de contrôle en sept étapes pour décider si et comment utiliser un o
 
 ---
 
-## Étape 7 — Surveillance et arrêt
+## Étape 7 : Surveillance et arrêt
 
 **Réviseur responsable :** Responsable du pilote ou des risques
 

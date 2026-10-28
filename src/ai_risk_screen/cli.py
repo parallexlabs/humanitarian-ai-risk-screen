@@ -19,7 +19,7 @@ from ai_risk_screen.validate import validate_screen
 @click.group()
 @click.version_option(__version__, prog_name="ai-risk-screen")
 def main() -> None:
-    """Humanitarian AI Risk Screen — validate, score, and report."""
+    """Humanitarian AI Risk Screen: validate, score, and report."""
 
 
 @main.command("validate")

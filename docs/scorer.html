@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Screen scorer — Humanitarian AI Risk Screen</title>
+  <title>Screen scorer | Humanitarian AI Risk Screen</title>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/parallex-favicon-32.png">
   <link rel="apple-touch-icon" href="assets/brand/parallex-apple-touch-180.png">
@@ -28,17 +28,17 @@
       <fieldset>
         <legend>Step completion</legend>
         <p>Mark each step complete when the accountable reviewer has signed off.</p>
-        <div class="checkbox-row"><input type="checkbox" id="complete_purpose" name="complete_purpose"><label for="complete_purpose">Step 1 — Purpose complete</label></div>
-        <div class="checkbox-row"><input type="checkbox" id="complete_people" name="complete_people"><label for="complete_people">Step 2 — People complete</label></div>
-        <div class="checkbox-row"><input type="checkbox" id="complete_data" name="complete_data"><label for="complete_data">Step 3 — Data complete</label></div>
-        <div class="checkbox-row"><input type="checkbox" id="complete_tool" name="complete_tool"><label for="complete_tool">Step 4 — Tool complete</label></div>
-        <div class="checkbox-row"><input type="checkbox" id="complete_output" name="complete_output"><label for="complete_output">Step 5 — Output complete</label></div>
-        <div class="checkbox-row"><input type="checkbox" id="complete_human_control" name="complete_human_control"><label for="complete_human_control">Step 6 — Human control complete</label></div>
-        <div class="checkbox-row"><input type="checkbox" id="complete_monitoring" name="complete_monitoring"><label for="complete_monitoring">Step 7 — Monitoring complete</label></div>
+        <div class="checkbox-row"><input type="checkbox" id="complete_purpose" name="complete_purpose"><label for="complete_purpose">Step 1: Purpose complete</label></div>
+        <div class="checkbox-row"><input type="checkbox" id="complete_people" name="complete_people"><label for="complete_people">Step 2: People complete</label></div>
+        <div class="checkbox-row"><input type="checkbox" id="complete_data" name="complete_data"><label for="complete_data">Step 3: Data complete</label></div>
+        <div class="checkbox-row"><input type="checkbox" id="complete_tool" name="complete_tool"><label for="complete_tool">Step 4: Tool complete</label></div>
+        <div class="checkbox-row"><input type="checkbox" id="complete_output" name="complete_output"><label for="complete_output">Step 5: Output complete</label></div>
+        <div class="checkbox-row"><input type="checkbox" id="complete_human_control" name="complete_human_control"><label for="complete_human_control">Step 6: Human control complete</label></div>
+        <div class="checkbox-row"><input type="checkbox" id="complete_monitoring" name="complete_monitoring"><label for="complete_monitoring">Step 7: Monitoring complete</label></div>
       </fieldset>
 
       <fieldset>
-        <legend>Step 3 — Data</legend>
+        <legend>Step 3: Data</legend>
         <label for="authority_basis">Authority basis (if personal data)</label>
         <input type="text" id="authority_basis" name="authority_basis" autocomplete="off">
         <label for="minimization_plan">Minimization plan (if sensitive non-personal data)</label>
@@ -50,29 +50,29 @@
       </fieldset>
 
       <fieldset>
-        <legend>Step 4 — Tool</legend>
+        <legend>Step 4: Tool</legend>
         <div class="checkbox-row"><input type="checkbox" id="tool_approved" name="tool_approved" checked><label for="tool_approved">Tool is on approved list</label></div>
       </fieldset>
 
       <fieldset>
-        <legend>Step 5 — Output</legend>
+        <legend>Step 5: Output</legend>
         <div class="checkbox-row"><input type="checkbox" id="high_stakes_decision" name="high_stakes_decision"><label for="high_stakes_decision">High-stakes decision</label></div>
         <div class="checkbox-row"><input type="checkbox" id="output_reviewable" name="output_reviewable" checked><label for="output_reviewable">Output is human-reviewable</label></div>
       </fieldset>
 
       <fieldset>
-        <legend>Step 2 — People</legend>
+        <legend>Step 2: People</legend>
         <div class="checkbox-row"><input type="checkbox" id="partner_review_needed" name="partner_review_needed"><label for="partner_review_needed">Partner review needed</label></div>
         <div class="checkbox-row"><input type="checkbox" id="protection_review_needed" name="protection_review_needed"><label for="protection_review_needed">Protection review needed</label></div>
       </fieldset>
 
       <fieldset>
-        <legend>Step 6 — Human control</legend>
+        <legend>Step 6: Human control</legend>
         <div class="checkbox-row"><input type="checkbox" id="safe_remedy_available" name="safe_remedy_available" checked><label for="safe_remedy_available">Safe remedy available for affected people</label></div>
       </fieldset>
 
       <fieldset>
-        <legend>Step 7 — Monitoring</legend>
+        <legend>Step 7: Monitoring</legend>
         <div class="checkbox-row"><input type="checkbox" id="controlled_pilot_required" name="controlled_pilot_required"><label for="controlled_pilot_required">Controlled pilot required</label></div>
       </fieldset>
 
@@ -81,7 +81,7 @@
 
     <section id="result-panel" hidden aria-live="polite">
       <h2>Outcome</h2>
-      <p><span id="result-badge" class="outcome-badge">—</span></p>
+      <p><span id="result-badge" class="outcome-badge">Not scored yet</span></p>
       <h3>Reasons</h3>
       <ul id="result-reasons"></ul>
     </section>

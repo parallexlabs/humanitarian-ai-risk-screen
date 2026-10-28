@@ -1,12 +1,12 @@
 # Fiches de cas de formation (synthétiques)
 
-*Traduction de travail — révision bienvenue*
+*Traduction de travail : révision bienvenue*
 
-Tous les scénarios ci-dessous sont **synthétiques** — inventés pour la formation. Ils ne décrivent pas d'événements, de personnes ou d'organisations réels.
+Tous les scénarios ci-dessous sont **synthétiques** : inventés pour la formation. Ils ne décrivent pas d'événements, de personnes ou d'organisations réels.
 
 ---
 
-## Cas 1 — SMS d'évacuation incendie de forêt
+## Cas 1 : SMS d'évacuation incendie de forêt
 
 ### Scénario
 
@@ -22,13 +22,13 @@ Un responsable communication demande à un outil IA de rédiger un SMS alertant 
 
 | Résultat | **Rouge** |
 |----------|-----------|
-| Règle principale | R1 — Entrée prohibée (noms et numéros de téléphone de bénéficiaires non caviardés) |
-| Indicateurs secondaires | A4 — Un pilote contrôlé serait nécessaire même avec un outil d'entreprise approuvé |
+| Règle principale | R1 : Entrée prohibée (noms et numéros de téléphone de bénéficiaires non caviardés) |
+| Indicateurs secondaires | A4 : Un pilote contrôlé serait nécessaire même avec un outil d'entreprise approuvé |
 | Action correcte | Utiliser une plateforme SMS de masse approuvée avec modèles pré-approuvés ; aucune donnée personnelle dans les invites IA ; examen protection pour la formulation d'évacuation |
 
 ---
 
-## Cas 2 — Ambiguïté de traduction avec omission nuisible
+## Cas 2 : Ambiguïté de traduction avec omission nuisible
 
 ### Scénario
 
@@ -44,12 +44,12 @@ Un agent de terrain utilise l'IA pour traduire un formulaire de retour communaut
 
 | Résultat | **Ambre** (pourrait devenir **Rouge** si publié sans correction) |
 |----------|-------------------------------------------------------------------|
-| Règles principales | A2 — Examen protection requis ; A8 — Sortie non confirmée comme vérifiable |
+| Règles principales | A2 : Examen protection requis ; A8 : Sortie non confirmée comme vérifiable |
 | Action correcte | Révision bilingue humaine de la source complète ; approbation du point focal protection ; ne jamais publier de traductions sans vérification côte à côte |
 
 ---
 
-## Cas 3 — Mise à jour bailleur avec statistiques inventées
+## Cas 3 : Mise à jour bailleur avec statistiques inventées
 
 ### Scénario
 
@@ -65,12 +65,12 @@ Un gestionnaire de subventions demande à l'IA de rédiger une mise à jour trim
 
 | Résultat | **Ambre** si détecté avant envoi ; **Rouge** si publié avec des chiffres fabriqués |
 |----------|--------------------------------------------------------------------------------------|
-| Règles principales | A7 — Enjeux élevés (rapport bailleur) ; vérification requise |
+| Règles principales | A7 : Enjeux élevés (rapport bailleur) ; vérification requise |
 | Action correcte | Chaque chiffre tracé vers les données MEAL ou de suivi officiel dans le registre ; approbation du point focal MEAL |
 
 ---
 
-## Cas 4 — Quand la bonne réponse est de ne pas utiliser l'IA
+## Cas 4 : Quand la bonne réponse est de ne pas utiliser l'IA
 
 ### Scénario
 
@@ -86,5 +86,5 @@ Un travailleur social veut utiliser l'IA pour décider si une famille réfugiée
 
 | Résultat | **Rouge** |
 |----------|-----------|
-| Règles principales | R3 — Décision à enjeux élevés qui ne doit pas être déléguée à une sortie IA non vérifiable |
+| Règles principales | R3 : Décision à enjeux élevés qui ne doit pas être déléguée à une sortie IA non vérifiable |
 | Action correcte | Ne pas utiliser l'IA pour les décisions d'admissibilité ; utiliser une évaluation humaine structurée avec critères documentés, voie d'appel et responsabilité du travailleur social |

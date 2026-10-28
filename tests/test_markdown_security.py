@@ -27,7 +27,7 @@ def _screen_with_meta(**meta_fields: str) -> dict[str, Any]:
 def _outcome() -> OutcomeResult:
     return OutcomeResult(
         level="amber",
-        label="Amber — Pause",
+        label="Amber: Pause",
         reasons=(INJECTION,),
         rule_ids=("A1",),
     )

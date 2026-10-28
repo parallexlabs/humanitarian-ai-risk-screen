@@ -16,11 +16,11 @@ A seven-step checklist to decide whether and how to use an AI tool for a humanit
 |---------|---------|
 | **Green** | Low risk. Proceed with source checks and a named owner's sign-off. |
 | **Amber** | Pause for privacy, protection, or partner review; proceed only via controlled pilot |
-| **Red** | Do not use — prohibited input, unapproved tool, unreviewable high-stakes decision, or no safe remedy |
+| **Red** | Do not use: prohibited input, unapproved tool, unreviewable high-stakes decision, or no safe remedy |
 
 ---
 
-## Step 1 — Purpose and non-AI alternative
+## Step 1: Purpose and non-AI alternative
 
 **Accountable reviewer:** Programme or operations lead
 
@@ -28,14 +28,14 @@ A seven-step checklist to decide whether and how to use an AI tool for a humanit
 |----------|----------------|
 | What task will AI support? | Clear description of the work |
 | What would you do without AI? | The non-AI alternative (manual draft, template, expert review, community meeting) |
-| What does AI add? | Time saved, language coverage, scale — stated honestly |
+| What does AI add? | Time saved, language coverage, scale, stated honestly |
 | Is the non-AI path viable? | Yes/no; if no, explain why AI is proportionate |
 
 **Stop if:** The task is better served by the non-AI alternative and AI adds no accountable value.
 
 ---
 
-## Step 2 — People and partners
+## Step 2: People and partners
 
 **Accountable reviewer:** Protection or community-engagement focal point
 
@@ -50,7 +50,7 @@ A seven-step checklist to decide whether and how to use an AI tool for a humanit
 
 ---
 
-## Step 3 — Data
+## Step 3: Data
 
 **Accountable reviewer:** Data protection or information-management focal point
 
@@ -67,7 +67,7 @@ A seven-step checklist to decide whether and how to use an AI tool for a humanit
 
 ---
 
-## Step 4 — Tool and vendor
+## Step 4: Tool and vendor
 
 **Accountable reviewer:** IT, procurement, or designated tool approver
 
@@ -84,7 +84,7 @@ A seven-step checklist to decide whether and how to use an AI tool for a humanit
 
 ---
 
-## Step 5 — Output verification
+## Step 5: Output verification
 
 **Accountable reviewer:** Subject-matter or MEAL focal point
 
@@ -99,7 +99,7 @@ A seven-step checklist to decide whether and how to use an AI tool for a humanit
 
 ---
 
-## Step 6 — Human control
+## Step 6: Human control
 
 **Accountable reviewer:** Line manager or delegated decision authority
 
@@ -114,7 +114,7 @@ A seven-step checklist to decide whether and how to use an AI tool for a humanit
 
 ---
 
-## Step 7 — Monitoring and stop
+## Step 7: Monitoring and stop
 
 **Accountable reviewer:** Pilot owner or risk owner
 

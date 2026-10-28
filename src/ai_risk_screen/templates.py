@@ -5,7 +5,7 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
-BLANK_SCREEN_YAML = """# Humanitarian AI Risk Screen — blank template
+BLANK_SCREEN_YAML = """# Humanitarian AI Risk Screen: blank template
 meta:
   task_name: ""
   organization: ""

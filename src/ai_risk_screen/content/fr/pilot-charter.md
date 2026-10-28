@@ -1,6 +1,6 @@
 # Modèle de charte pilote
 
-*Traduction de travail — révision bienvenue*
+*Traduction de travail : révision bienvenue*
 
 Utilisez cette charte lorsque l'écran de risque renvoie **ambre**. Complétez les dix champs avant de démarrer un pilote contrôlé.
 
